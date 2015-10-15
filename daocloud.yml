@@ -1,11 +1,10 @@
 # This is a comment line
 
-image: 192.168.1.49:5000/wuhp/ubuntu:14.04
+image: localhost:5000/wuhp/ubuntu:14.04
 
 services:
   - mysql
   - redis
-  - mongodb
 
 env:
   - MYENV=xyz
