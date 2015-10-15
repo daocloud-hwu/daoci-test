@@ -22,4 +22,3 @@ script:
   - echo this is a script line
   - ping -c 2 mysql
   - ping -c 2 redis
-  - ping -c 2 mongodb
