@@ -1,7 +1,4 @@
-FROM localhost:5000/wuhp/ubuntu:14.04
+FROM daocloud.io/python:2.7
 
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-COPY . /usr/src/app
-
-CMD [ "sleep", "100" ]
+EXPOSE 80
+CMD [ "python", "-m", "SimpleHTTPServer", "80"]
