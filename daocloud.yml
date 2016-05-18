@@ -1,26 +1,6 @@
 # This is a comment line
 
-image: 192.168.1.49:5000/wuhp/ubuntu:14.04
-
-services:
-  - mysql
-  - redis
-  - mongodb
-
-env:
-  - MYENV=xyz
-
-install:
-  - echo ${MYENV}
-  - echo this is a install line
-
-before_script:
-  - echo ${MYENV}
-  - echo this is a before script line
+image: daocloud.io/python:2.7
 
 script:
-  - echo ${MYENV}
   - echo this is a script line
-  - ping -c 2 mysql
-  - ping -c 2 redis
-  - ping -c 2 mongodb
